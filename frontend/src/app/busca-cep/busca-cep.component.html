@@ -1,0 +1,30 @@
+<div class="navbar navbar-roxo">
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col">
+        <h2 class="texto-amarelo">Buscar Endereço por CEP</h2>
+        <form (ngSubmit)="buscaEndereco()">
+          <div class="form-group">
+            <label for="cepInput">
+              Informe um ou mais CEPs separados por ";" (ponto evírgula):
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="cepInput"
+              name="cepInput"
+              [(ngModel)]="cepInput"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+    <div class="mt-3 alert alert-danger" *ngIf="errorMessage">
+        {{ errorMessage }}
+      </div>
+</div>
