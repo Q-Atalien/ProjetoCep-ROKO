@@ -1,6 +1,6 @@
-# README #
+# Projeto Cep#
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Este projeto é uma solução para o desafio de entrevista da empresa Roko, no qual é necessário implementar um novo componente em um projeto base Angular para realizar a busca de endereço pelo CEP usando a API pública do ViaCEP.
 
 ### What is this repository for? ###
 
