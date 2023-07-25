@@ -1,10 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-.navbar-roxo {
+.navbar-verde {
     background-color: #d7eadd;
 }
 
-.texto-amarelo {
+.li-verde {
+    background-color: #e9f3ed;
+}
+
+.texto-verde {
     color: #498553;
+}
+
+.button-buscar{
+    background-color: #498553;
+    color: #d7eadd;
 }

@@ -1,8 +1,8 @@
-<div class="navbar navbar-roxo">
+<div class="navbar navbar-verde">
   <div class="container mt-4">
     <div class="row">
       <div class="col">
-        <h2 class="texto-amarelo">Buscar Endereço por CEP</h2>
+        <h2 class="texto-verde">Buscar Endereço por CEP</h2>
         <form (ngSubmit)="buscaEndereco()">
           <div class="form-group">
             <label for="cepInput">
@@ -16,15 +16,30 @@
               [(ngModel)]="cepInput"
               required
             />
+            <button type="submit" class="btn btn-primary button-buscar mt-2">Buscar</button>
           </div>
-          <button type="submit" class="btn btn-primary">Buscar</button>
         </form>
       </div>
     </div>
   </div>
 </div>
-<div class="container mt-4">
+<div class="container mt-3">
     <div class="mt-3 alert alert-danger" *ngIf="errorMessage">
         {{ errorMessage }}
+    </div>
+    <div class="mt-3" *ngIf="endereco.length > 0">
+        <h3 class="texto-verde">Endereços encontrados:</h3>
+        <ul class="list-group">
+          <li *ngFor="let address of endereco" class="list-group-item li-verde">
+            <strong class="texto-verde">CEP:</strong> {{ address.cep }} <br>
+            <strong class="texto-verde">Logradouro:</strong> {{ address.logradouro }} <br>
+            <strong class="texto-verde">Bairro:</strong> {{ address.bairro }} <br>
+            <strong class="texto-verde">Cidade/UF:</strong> {{ address.localidade }} / {{ address.uf }}<br>
+            <strong class="texto-verde">IBGE:</strong> {{ address.ibge }} 
+            <strong class="texto-verde">GIA:</strong> {{ address.gia }} <br>
+            <strong class="texto-verde">DDD:</strong> {{ address.ddd }} 
+            <strong class="texto-verde">Siafi:</strong> {{ address.siafi }} <br>
+          </li>
+        </ul>
       </div>
 </div>
