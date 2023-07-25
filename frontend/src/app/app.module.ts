@@ -5,10 +5,12 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BuscaCepComponent } from './busca-cep/busca-cep.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BuscaCepComponent,
   ],
   imports: [
     BrowserModule,
