@@ -35,7 +35,7 @@ Instale as dependências
 Inicie o servidor
 
 ```bash
-  ng Serve
+  ng serve
 ```
 
 ## Documentação de cores
