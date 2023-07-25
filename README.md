@@ -7,7 +7,7 @@ Este projeto é uma solução para o desafio de entrevista da empresa Roko, no q
 ## Rodando localmente
  - Instale o Node.js e o npm (Node Package Manager) em seu sistema, caso ainda não o tenha feito.
  
-Instale o Angular CLI globalmente
+Instale o Angular CLI globalmente(caso ainda não tenha feito)
 
 ```bash
   npm install -g @angular/cli
@@ -22,9 +22,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd ProjetoCep-ROKO/
-
-  cd frontend/
+  cd ProjetoCep-ROKO/frontend/
 
 ```
 
